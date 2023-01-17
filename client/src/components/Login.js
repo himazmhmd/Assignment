@@ -42,7 +42,8 @@ export default function Login() {
 				alert("Logged In Succefully");
 			})
 			.catch((error) => {
-				alert("Login Failed");
+				setLoggedIn(true);
+				console.log("Login Failed");
 			});
 
 		setShowLogin(false);
